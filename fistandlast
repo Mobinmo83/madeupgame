@@ -1,0 +1,321 @@
+# madeupgame
+
+import random
+
+print("jungle game")
+
+print("welcom to our game, it includes one player and the computer opponent also the order of game arranges by (rock , paper , scissor) and then we will go through the main game")
+
+p1n = input("please entyer your name : ")
+
+print("now turn to (rock , paper , scissor) ")
+
+randomNumber1 = random.randint(0,2)
+
+if randomNumber1 == 0 :
+    ccg1 = "rock"
+elif randomNumber1 == 1 :
+    ccg1 = "paper"
+elif randomNumber1 == 2 :
+    ccg1 = "scissor"
+
+p1cg1 = input(f" {p1n} enter your choose from (rock , paper , scissor) : ")
+print (f"computer move is :{ccg1}")
+
+if p1cg1 == ccg1 :
+    p1g1p = 0
+    cg1p = 0
+elif p1cg1 == "rock" :
+    if ccg1 == "scissor" :
+        p1g1p = 1
+        cg1p = 0
+    elif ccg1 == "paper"  :
+        p1g1p = 0
+        cg1p = 1
+elif p1cg1 == "paper" :
+    if ccg1 == "rock" :
+        p1g1p = 1
+        cg1p = 0
+    elif ccg1 == "scissor" :
+        p1g1p = 0
+        cg1p = 1
+elif p1cg1 == "scissor" :
+    if ccg1 == "paper" :
+        p1g1p = 1
+        cg1p = 0
+    elif ccg1 == "rock" :
+        p1g1p = 0
+        cg1p = 1
+else :
+    p1g1p = 0
+    cg1p = 0
+
+
+if p1g1p == cg1p :
+    
+    print("because you guys get draw the game will repeat")
+
+
+    randomNumber = random.randint(0,2)
+
+    if randomNumber == 0 :
+        ccg1 = "rock"
+    elif randomNumber == 1 :
+        ccg1 = "paper"
+    elif randomNumber == 2 :
+        ccg1 = "scissor"
+
+    p1cg1 = input(f" {p1n} enter your choose from (rock , paper , scissor) : ")
+    print (f"computer move is :{ccg1}")
+
+    if p1cg1 == ccg1 :
+        p1g1p = 0
+        cg1p = 0
+    elif p1cg1 == "rock" :
+        if ccg1 == "scissor" :
+            p1g1p = 1
+            cg1p = 0
+        elif ccg1 == "paper"  :
+            p1g1p = 0
+            cg1p = 1
+    elif p1cg1 == "paper" :
+        if ccg1 == "rock" :
+            p1g1p = 1
+            cg1p = 0
+        elif ccg1 == "scissor" :
+            p1g1p = 0
+            cg1p = 1
+    elif p1cg1 == "scissor" :
+        if ccg1 == "paper" :
+            p1g1p = 1
+            cg1p = 0
+        elif ccg1 == "rock" :
+            p1g1p = 0
+            cg1p = 1
+    else :
+        p1g1p = 0
+        cg1p = 0
+elif p1g1p > cg1p :
+    import random
+    
+    print("welcom to the jungle game")
+
+
+    print("rules : you  have to choose a animal between [elephant 1 point,lion 2 points,dog 3 points,cat 4 points,mouse 5 points] and in this game we have only one winner and one loser but in some occasion it is going to be a draw")
+
+    print(f"let's start the game {p1n}")
+
+    randomNumber3 = random.randint(0,4)
+
+    if randomNumber3 == 0 :
+        ccg2p1 = "elephant"
+    elif randomNumber3 == 1 :
+        ccg2p1 = "lion"
+    elif randomNumber3 == 2 :
+        ccg2p1 = "dog"
+    elif randomNumber3 == 3 :
+        ccg2p1 = "cat"
+    elif randomNumber3 == 4 :
+        ccg2p1 = "mouse"
+
+    p1p1 = input(f"{p1n} enter your animal :")
+    print(f"computer move is : {ccg2p1}")
+
+
+    if p1p1 == "elephant" :
+        if ccg2p1 == "elephant" :
+            rn1p1 = 0
+            rn1p2 = 0
+        elif ccg2p1 == "lion" :
+            rn1p1 = 1
+            rn1p2 = 0
+        elif ccg2p1 == "dog" :
+            rn1p1 = 1
+            rn1p2 = 0
+        elif ccg2p1 == "cat" :
+            rn1p1 = 1
+            rn1p2 = 0
+        elif ccg2p1 == "mouse" :
+            rn1p1 = 0
+            rn1p2 = 5
+    elif p1p1 == "lion" :
+        if ccg2p1 == "elephant" :
+            rn1p1 = 0
+            rn1p2 = 1
+        elif ccg2p1 == "lion" :
+            rn1p1 = 0
+            rn1p2 = 0
+        elif ccg2p1 == "dog" :
+            rn1p1 = 2
+            rn1p2 = 0
+        elif ccg2p1 == "cat" :
+            rn1p1 = 2
+            rn1p2 = 0
+        elif ccg2p1 == "mouse" :
+            rn1p1 = 2
+            rn1p2 = 0
+    elif p1p1 == "dog" :
+        if ccg2p1 == "elephant" :
+            rn1p1 = 0 
+            rn1p2 = 1
+        elif ccg2p1 == "lion" :
+            rn1p1 = 0
+            rn1p2 = 2
+        elif ccg2p1 == "dog" :        
+            rn1p1 = 0
+            rn1p2 = 0
+        elif ccg2p1 == "cat" :
+            rn1p1 = 3
+            rn1p2 = 0
+        elif ccg2p1 == "mouse":
+            rn1p1 = 3
+            rn1p2 = 0
+    elif p1p1 == "cat" :
+        if ccg2p1 == "elephant" :
+            rn1p1 = 0
+            rn1p2 = 1
+        elif ccg2p1 == "lion" :
+            rn1p1 = 0
+            rn1p2 = 2
+        elif ccg2p1 == "dog" :
+            rn1p1 = 0
+            rn1p2 = 3
+        elif ccg2p1 == "cat" :
+            rn1p1 = 0
+            rn1p2 = 0
+        elif ccg2p1 == "mouse" :
+            rn1p1 = 4
+            rn1p2 = 0
+    elif p1p1 == "mouse" :
+        if ccg2p1 == "elephant" :
+            rn1p1 = 5
+            rn1p2 = 0
+        elif ccg2p1 == "lion" :
+            rn1p1 = 0
+            rn1p2 = 2
+        elif ccg2p1 == "dog" :
+            rn1p1 = 0
+            rn1p2 = 3
+        elif ccg2p1 == "cat" :
+            rn1p1 = 0
+            rn1p2 = 4
+        elif ccg2p1 == "mouse" :
+            rn1p1 = 0
+            rn1p2 = 0
+    else :
+        print("given data is not valid")
+
+
+
+    print(f"let's start the second round {p1n}")
+
+    randomNumber3 = random.randint(0,4)
+
+    if randomNumber3 == 0 :
+        ccg2p2 = "elephant"
+    elif randomNumber3 == 1 :
+        ccg2p2 = "lion"
+    elif randomNumber3 == 2 :
+        ccg2p2 = "dog"
+    elif randomNumber3 == 3 :
+        ccg2p2 = "cat"
+    elif randomNumber3 == 4 :
+        ccg2p2 = "mouse"
+
+    p1p2 = input(f"{p1n} enter your animal :")
+    print(f"computer move is : {ccg2p2}")
+
+
+    if p1p2 == "elephant" :
+        if ccg2p2 == "elephant" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "lion" :
+            rn2p1 = 1 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "dog" :
+            rn2p1 = 1 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "cat" :
+            rn2p1 = 1 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "mouse" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 5 + int (rn1p2)
+    elif p1p2 == "lion" :
+        if ccg2p2 == "elephant" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 1 + int (rn1p2)
+        elif ccg2p2 == "lion" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "dog" :
+            rn2p1 = 2 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "cat" :
+            rn2p1 = 2 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "mouse" :
+            rn2p1 = 2 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+    elif p1p2 == "dog" :
+        if ccg2p2 == "elephant" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 1 + int (rn1p2)
+        elif ccg2p2 == "lion" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 2 + int (rn1p2)
+        elif ccg2p2 == "dog" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "cat" :
+            rn2p1 = 3 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "mouse" :
+            rn2p1 = 3 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+    elif p1p2 == "cat" :
+        if ccg2p2 == "elephant" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 1 + int (rn1p2)
+        elif ccg2p2 == "lion" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 2 + int (rn1p2)
+        elif ccg2p2 == "dog" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 3 + int (rn1p2)
+        elif ccg2p2 == "cat" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "mouse" :
+            rn2p1 = 4 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+    elif p1p2 == "mouse" :
+        if ccg2p2 == "elephant" :
+            rn2p1 = 5 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+        elif ccg2p2 == "lion" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 2 + int (rn1p2)
+        elif ccg2p2 == "dog" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 3 + int (rn1p2)
+        elif ccg2p2 == "cat" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 4 + int (rn1p2)
+        elif ccg2p2 == "mouse" :
+            rn2p1 = 0 + int (rn1p1)
+            rn2p2 = 0 + int (rn1p2)
+    else :
+        print("given data is not valid")
+
+    print("this is the end of game")
+    print("now turn to exhibit the winner")
+
+    if rn2p1 > rn2p2 :
+        print(f"{p1n} is the winner of the game by {rn2p1} points")
+    elif rn2p1 == rn2p2 :
+        print(f"the whole game get draw by {rn2p1} points for both of them")
+    elif rn2p1 < rn2p2 :
+        print(f"computer is the winner of the game by {rn2p2} points")
+elif p1g1p < cg1p :
